@@ -1,0 +1,234 @@
+/* style.css */
+
+/* body */
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+}
+
+/* form */
+form {
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 20px;
+}
+
+/* labels */
+label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 21px;
+}
+
+/* inputs */
+input[type="date"],
+input[type="number"],
+input[type="text"] {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+
+/* error messages */
+.error {
+    color: #f00;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+/* radio buttons */
+input[type="radio"] {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+label.radio {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: normal;
+    margin-right: 20px;
+}
+
+label.radio input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+label.radio span {
+    display: inline-block;
+    position: relative;
+    padding-left: 25px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+label.radio span:before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    position: absolute;
+    left: 0;
+    top: 1px;
+}
+
+label.radio span:after {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #4CAF50;
+    position: absolute;
+    left: 3px;
+    top: 4px;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+label.radio input[type="radio"]:checked+span:before {
+    border-color: #4CAF50;
+}
+
+label.radio input[type="radio"]:checked+span:after {
+    opacity: 1;
+}
+
+/* amount */
+input[type="number"].amount {
+    width: calc(100% - 80px);
+    display: inline-block;
+    margin-right: 10px;
+}
+
+span.currency {
+    display: inline-block;
+    width: 70px;
+    text-align: right;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 38px;
+}
+
+
+
+
+/* Data page CSS */
+/* Style for table */
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    /* border-collapse: collapse; */
+    margin: auto;
+    width: auto;
+    min-width: 80%;
+    max-width: 500px;
+}
+
+td,
+th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4286f4;
+    color: white;
+}
+
+/* Style for total rows */
+tr.total {
+    background-color: #ccc;
+    font-weight: bold;
+}
+
+/* Style for success and error messages */
+.success-message,
+.error-message {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.success-message {
+    background-color: #5cb85c;
+    color: white;
+}
+
+.error-message {
+    background-color: #d9534f;
+    color: white;
+}
+
+h2 {
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+/* Export Button */
+
+#dateInputContainer {
+    display: none;
+}
+
+#exportBtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
+  #datePickerContainer input[type="date"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+    width: 15%;
+  }
+  
+  #datePickerContainer button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
